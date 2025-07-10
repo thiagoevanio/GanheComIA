@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra as melhores ferramentas de IA para monetização. ChatGPT, Canva, Leonardo AI, Pictory, DALL-E e muito mais.">
+    <meta name="keywords" content="ferramentas IA, ChatGPT, Canva, Leonardo AI, Pictory, DALL-E, Notion AI, monetizar IA">
+    <meta name="author" content="GanheComIA">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ganhecomia.com.br/ferramentas.html">
+    <meta property="og:title" content="Ferramentas de IA para Monetização | GanheComIA">
+    <meta property="og:description" content="Descubra as melhores ferramentas de IA para monetização. ChatGPT, Canva, Leonardo AI, Pictory, DALL-E e muito mais.">
+    <meta property="og:image" content="img/hero_ia.jpg">
+
+    <title>Ferramentas de IA para Monetização | GanheComIA</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .tools-section {
+            padding: 80px 0;
+        }
+        
+        .category-title {
+            text-align: center;
+            margin: 4rem 0 2rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+        
+        .tool-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--dark-color);
+            font-size: 1.3rem;
+        }
+        
+        .tool-category {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .tool-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .tool-features {
+            margin-bottom: 1.5rem;
+        }
+        
+        .tool-features h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            color: #666;
+        }
+        
+        .features-list li::before {
+            content: "✓";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .tool-pricing {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pricing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .pricing-label {
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+        
+        .pricing-value {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        .tool-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-tool {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .btn-primary-tool {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary-tool:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary-tool {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary-tool:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-tab {
+            padding: 0.8rem 1.5rem;
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        
+        .filter-tab.active,
+        .filter-tab:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .comparison-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .comparison-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .rating {
+            color: #ffc107;
+        }
+        
+        /* Dark mode */
+        body.dark-mode .tool-card {
+            background: var(--dark-secondary);
+            border-color: #444;
+        }
+        
+        body.dark-mode .tool-pricing {
+            background: #333;
+        }
+        
+        body.dark-mode .comparison-table {
+            background: var(--dark-secondary);
+        }
+        
+        body.dark-mode .comparison-table td {
+            border-color: #444;
+        }
+        
+        body.dark-mode .comparison-table tr:hover {
+            background: #333;
+        }
+        
+        body.dark-mode .filter-tab {
+            background: var(--dark-secondary);
+            border-color: #444;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tool-actions {
+                flex-direction: column;
+            }
+            
+            .btn-tool {
+                flex: none;
+            }
+            
+            .filter-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG6JFLXJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MEG6JFLXJZ');
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">GanheComIA</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="index.html#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="ferramentas.html" class="nav-link active">Ferramentas</a></li>
+                    <li><a href="cursos-ebooks.html" class="nav-link">Cursos</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ferramentas de IA para Monetização</h1>
+            <p style="font-size: 1.2rem; margin-top: 1rem;">Descubra as melhores ferramentas de inteligência artificial para transformar suas ideias em renda</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-category="all">Todas</div>
+                <div class="filter-tab" data-category="text">Texto & Escrita</div>
+                <div class="filter-tab" data-category="design">Design & Imagens</div>
+                <div class="filter-tab" data-category="video">Vídeo & Áudio</div>
+                <div class="filter-tab" data-category="productivity">Produtividade</div>
+                <div class="filter-tab" data-category="code">Programação</div>
+            </div>
+
+            <!-- Ferramentas de Texto e Escrita -->
+            <div class="tools-grid" data-category="text">
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <img src="img/chatgpt_icon.png" alt="ChatGPT" class="tool-icon">
+                        <div class="tool-info">
+                            <h3>ChatGPT</h3>
+                            <span class="tool-category">Texto & IA</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        A ferramenta de IA conversacional mais popular do mundo. Ideal para criação de conteúdo, copywriting, tradução e automação de tarefas de texto.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Recursos:</h4>
+                        <ul class="features-list">
+                            <li>Geração de textos criativos e informativos</li>
+                            <li>Tradução entre mais de 50 idiomas</li>
+                            <li>Criação de código em diversas linguagens</li>
+                            <li>Análise e resumo de documentos</li>
+                            <li>Brainstorming e geração de ideias</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Versão Gratuita:</span>
+                            <span class="pricing-value">Disponível</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">ChatGPT Plus:</span>
+                            <span class="pricing-value">$20/mês</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://chat.openai.com" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                        <a href="blog/10-formas-ganhar-dinheiro-chatgpt.html" class="btn-tool btn-secondary-tool">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div style="width: 60px; height: 60px; background: #1a73e8; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fab fa-google" style="color: white; font-size: 1.8rem;"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Google Bard</h3>
+                            <span class="tool-category">Assistente IA</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Assistente de IA do Google com acesso a informações em tempo real. Excelente para pesquisas, análises e tarefas que requerem dados atualizados.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Recursos:</h4>
+                        <ul class="features-list">
+                            <li>Acesso a informações em tempo real</li>
+                            <li>Integração com serviços Google</li>
+                            <li>Múltiplas versões de resposta</li>
+                            <li>Pesquisa avançada e análise</li>
+                            <li>Suporte a múltiplos idiomas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Acesso:</span>
+                            <span class="pricing-value">Gratuito</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://bard.google.com" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Design e Imagens -->
+            <div class="tools-grid" data-category="design">
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <img src="img/canva_icon.png" alt="Canva" class="tool-icon">
+                        <div class="tool-info">
+                            <h3>Canva</h3>
+                            <span class="tool-category">Design Gráfico</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Plataforma de design gráfico com recursos de IA integrados. Perfeita para criar materiais visuais profissionais sem experiência em design.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Recursos de IA:</h4>
+                        <ul class="features-list">
+                            <li>Magic Resize - redimensiona designs automaticamente</li>
+                            <li>Background Remover - remove fundos</li>
+                            <li>Magic Write - gera textos para designs</li>
+                            <li>Milhares de templates gratuitos</li>
+                            <li>Biblioteca de elementos e fotos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Canva Free:</span>
+                            <span class="pricing-value">Gratuito</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">Canva Pro:</span>
+                            <span class="pricing-value">R$ 39,90/mês</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://canva.com" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <img src="img/leonardo_ai_icon.png" alt="Leonardo AI" class="tool-icon">
+                        <div class="tool-info">
+                            <h3>Leonardo AI</h3>
+                            <span class="tool-category">Geração de Imagens</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Ferramenta avançada de geração de imagens com IA. Ideal para criar arte digital, ilustrações e conceitos visuais únicos para projetos comerciais.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Recursos:</h4>
+                        <ul class="features-list">
+                            <li>Geração de imagens de alta qualidade</li>
+                            <li>Múltiplos estilos artísticos</li>
+                            <li>Controle avançado de parâmetros</li>
+                            <li>Upscaling de imagens</li>
+                            <li>Modelos especializados</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Plano Gratuito:</span>
+                            <span class="pricing-value">150 tokens/dia</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">Plano Pago:</span>
+                            <span class="pricing-value">A partir de $10/mês</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://leonardo.ai" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <img src="img/dalle_icon.png" alt="DALL-E" class="tool-icon">
+                        <div class="tool-info">
+                            <h3>DALL-E 2</h3>
+                            <span class="tool-category">Geração de Imagens</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Criador de imagens da OpenAI que gera arte digital a partir de descrições textuais. Perfeito para ilustrações únicas e conceitos criativos.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Recursos:</h4>
+                        <ul class="features-list">
+                            <li>Geração de imagens a partir de texto</li>
+                            <li>Edição e variações de imagens</li>
+                            <li>Outpainting - expansão de imagens</li>
+                            <li>Inpainting - edição de partes específicas</li>
+                            <li>Alta qualidade e realismo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Créditos Gratuitos:</span>
+                            <span class="pricing-value">15/mês</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">Créditos Pagos:</span>
+                            <span class="pricing-value">$15/115 créditos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://openai.com/dall-e-2" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Vídeo e Áudio -->
+            <div class="tools-grid" data-category="video">
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <img src="img/pictory_icon.png" alt="Pictory" class="tool-icon">
+                        <div class="tool-info">
+                            <h3>Pictory</h3>
+                            <span class="tool-category">Criação de Vídeos</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Plataforma de criação de vídeos com IA que transforma textos em vídeos profissionais. Ideal para marketing de conteúdo e redes sociais.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Recursos:</h4>
+                        <ul class="features-list">
+                            <li>Conversão de texto em vídeo</li>
+                            <li>Biblioteca de imagens e vídeos</li>
+                            <li>Voiceover automático</li>
+                            <li>Templates profissionais</li>
+                            <li>Legendas automáticas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Teste Gratuito:</span>
+                            <span class="pricing-value">3 vídeos</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">Plano Starter:</span>
+                            <span class="pricing-value">$19/mês</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://pictory.ai" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <div style="width: 60px; height: 60px; background: #6c5ce7; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-microphone" style="color: white; font-size: 1.8rem;"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>ElevenLabs</h3>
+                            <span class="tool-category">Síntese de Voz</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Ferramenta avançada de síntese de voz com IA que cria voiceovers realistas. Perfeita para audiobooks, podcasts e narração de vídeos.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Recursos:</h4>
+                        <ul class="features-list">
+                            <li>Vozes ultra-realistas</li>
+                            <li>Clonagem de voz</li>
+                            <li>Múltiplos idiomas</li>
+                            <li>Controle de emoção e tom</li>
+                            <li>API para integração</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Plano Gratuito:</span>
+                            <span class="pricing-value">10.000 caracteres/mês</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">Plano Starter:</span>
+                            <span class="pricing-value">$5/mês</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://elevenlabs.io" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Produtividade -->
+            <div class="tools-grid" data-category="productivity">
+                <div class="tool-card fade-in">
+                    <div class="tool-header">
+                        <img src="img/notion_ai_icon.png" alt="Notion AI" class="tool-icon">
+                        <div class="tool-info">
+                            <h3>Notion AI</h3>
+                            <span class="tool-category">Produtividade</span>
+                        </div>
+                    </div>
+                    
+                    <p class="tool-description">
+                        Workspace inteligente que combina notas, documentos, wikis e projetos com recursos de IA integrados para máxima produtividade.
+                    </p>
+                    
+                    <div class="tool-features">
+                        <h4>Recursos de IA:</h4>
+                        <ul class="features-list">
+                            <li>Geração automática de conteúdo</li>
+                            <li>Resumo de textos longos</li>
+                            <li>Tradução de documentos</li>
+                            <li>Brainstorming assistido</li>
+                            <li>Organização inteligente</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-pricing">
+                        <div class="pricing-item">
+                            <span class="pricing-label">Notion Free:</span>
+                            <span class="pricing-value">Gratuito</span>
+                        </div>
+                        <div class="pricing-item">
+                            <span class="pricing-label">Notion AI:</span>
+                            <span class="pricing-value">$10/mês</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <a href="https://notion.so" target="_blank" class="btn-tool btn-primary-tool">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Comparação de Ferramentas</h2>
+                <p>Escolha a ferramenta ideal para suas necessidades</p>
+            </div>
+            
+            <table class="comparison-table fade-in">
+                <thead>
+                    <tr>
+                        <th>Ferramenta</th>
+                        <th>Categoria</th>
+                        <th>Preço Inicial</th>
+                        <th>Facilidade de Uso</th>
+                        <th>Potencial de Monetização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ChatGPT</strong></td>
+                        <td>Texto & IA</td>
+                        <td>Gratuito</td>
+                        <td><span class="rating">★★★★★</span></td>
+                        <td><span class="rating">★★★★★</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Canva</strong></td>
+                        <td>Design</td>
+                        <td>Gratuito</td>
+                        <td><span class="rating">★★★★★</span></td>
+                        <td><span class="rating">★★★★☆</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Leonardo AI</strong></td>
+                        <td>Imagens</td>
+                        <td>Gratuito</td>
+                        <td><span class="rating">★★★★☆</span></td>
+                        <td><span class="rating">★★★★★</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pictory</strong></td>
+                        <td>Vídeo</td>
+                        <td>$19/mês</td>
+                        <td><span class="rating">★★★★☆</span></td>
+                        <td><span class="rating">★★★★★</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DALL-E 2</strong></td>
+                        <td>Imagens</td>
+                        <td>15 créditos grátis</td>
+                        <td><span class="rating">★★★★★</span></td>
+                        <td><span class="rating">★★★★☆</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notion AI</strong></td>
+                        <td>Produtividade</td>
+                        <td>$10/mês</td>
+                        <td><span class="rating">★★★★☆</span></td>
+                        <td><span class="rating">★★★☆☆</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+        <div class="container" style="text-align: center;">
+            <div class="fade-in">
+                <h2 style="color: white; margin-bottom: 1rem;">Pronto para Começar?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Explore nossas ferramentas recomendadas e comece a monetizar com IA hoje mesmo</p>
+                <a href="index.html#artigos" class="btn btn-outline">Ver Artigos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GanheComIA</h3>
+                    <p>Sua fonte confiável para aprender e monetizar com Inteligência Artificial.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <a href="index.html#inicio">Início</a>
+                    <a href="index.html#como-funciona">Como Funciona</a>
+                    <a href="index.html#artigos">Artigos</a>
+                    <a href="ferramentas.html">Ferramentas</a>
+                    <a href="cursos-ebooks.html">Cursos & eBooks</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Artigos Populares</h3>
+                    <a href="blog/10-formas-ganhar-dinheiro-chatgpt.html">10 Formas de Ganhar com ChatGPT</a>
+                    <a href="blog/como-criar-ebooks-ia.html">Criar eBooks com IA</a>
+                    <a href="blog/melhores-ferramentas-ia-iniciantes.html">Ferramentas Gratuitas de IA</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@ganhecomia.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 GanheComIA. Todos os direitos reservados. | <a href="#" style="color: #999;">Política de Privacidade</a> | <a href="#" style="color: #999;">Termos de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const toolsGrids = document.querySelectorAll('.tools-grid');
+            
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active tab
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide tool grids
+                    toolsGrids.forEach(grid => {
+                        const gridCategory = grid.getAttribute('data-category');
+                        if (category === 'all' || gridCategory === category) {
+                            grid.style.display = 'grid';
+                        } else {
+                            grid.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

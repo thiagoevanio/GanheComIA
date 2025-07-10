@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra os melhores cursos e eBooks sobre IA e monetização. Aprenda com especialistas e transforme conhecimento em renda.">
+    <meta name="keywords" content="cursos IA, eBooks inteligência artificial, monetizar IA, cursos online, educação digital">
+    <meta name="author" content="GanheComIA">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ganhecomia.com.br/cursos-ebooks.html">
+    <meta property="og:title" content="Cursos e eBooks sobre IA | GanheComIA">
+    <meta property="og:description" content="Descubra os melhores cursos e eBooks sobre IA e monetização. Aprenda com especialistas e transforme conhecimento em renda.">
+    <meta property="og:image" content="img/hero_ia.jpg">
+
+    <title>Cursos e eBooks sobre IA | GanheComIA</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .courses-section {
+            padding: 80px 0;
+        }
+        
+        .category-title {
+            text-align: center;
+            margin: 4rem 0 2rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .course-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .course-content {
+            padding: 2rem;
+        }
+        
+        .course-category {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .course-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+        
+        .course-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .course-features {
+            margin-bottom: 1.5rem;
+        }
+        
+        .course-features h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            color: #666;
+        }
+        
+        .features-list li::before {
+            content: "✓";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .course-pricing {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .price-original {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .price-current {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+        
+        .price-installments {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .course-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-course {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .btn-primary-course {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary-course:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary-course {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary-course:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .ebook-guide {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .guide-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .guide-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+        
+        .testimonials {
+            padding: 80px 0;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        .testimonial-role {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .rating-stars {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+        
+        /* Dark mode */
+        body.dark-mode .course-card {
+            background: var(--dark-secondary);
+            border-color: #444;
+        }
+        
+        body.dark-mode .course-pricing {
+            background: #333;
+        }
+        
+        body.dark-mode .guide-step {
+            background: var(--dark-secondary);
+        }
+        
+        body.dark-mode .testimonial-card {
+            background: var(--dark-secondary);
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .course-actions {
+                flex-direction: column;
+            }
+            
+            .btn-course {
+                flex: none;
+            }
+            
+            .guide-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG6JFLXJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MEG6JFLXJZ');
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">GanheComIA</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="index.html#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+                    <li><a href="cursos-ebooks.html" class="nav-link active">Cursos</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Cursos e eBooks sobre IA</h1>
+            <p style="font-size: 1.2rem; margin-top: 1rem;">Aprenda com especialistas e transforme conhecimento em renda real</p>
+        </div>
+    </section>
+
+    <!-- Cursos Recomendados -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Cursos Recomendados</h2>
+                <p>Selecionamos os melhores cursos para você dominar a monetização com IA</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card fade-in">
+                    <div class="course-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    
+                    <div class="course-content">
+                        <span class="course-category">Iniciante</span>
+                        <h3 class="course-title">IA para Iniciantes: Do Zero ao Lucro</h3>
+                        <p class="course-description">
+                            Curso completo para quem quer começar a ganhar dinheiro com inteligência artificial. Aprenda as ferramentas essenciais e estratégias comprovadas.
+                        </p>
+                        
+                        <div class="course-features">
+                            <h4>O que você vai aprender:</h4>
+                            <ul class="features-list">
+                                <li>Fundamentos da inteligência artificial</li>
+                                <li>Como usar ChatGPT profissionalmente</li>
+                                <li>Estratégias de monetização</li>
+                                <li>Criação de produtos digitais</li>
+                                <li>Marketing com IA</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-pricing">
+                            <div class="price-original">De R$ 197,00</div>
+                            <div class="price-current">R$ 60,00</div>
+                            <div class="price-installments">ou 6x de R$ 10,00</div>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-primary-course">Inscrever-se</a>
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-secondary-course">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-in">
+                    <div class="course-image">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    
+                    <div class="course-content">
+                        <span class="course-category">Intermediário</span>
+                        <h3 class="course-title">Monetização Avançada com ChatGPT</h3>
+                        <p class="course-description">
+                            Domine técnicas avançadas de monetização com ChatGPT. Ideal para quem já tem conhecimento básico e quer escalar os resultados.
+                        </p>
+                        
+                        <div class="course-features">
+                            <h4>O que você vai aprender:</h4>
+                            <ul class="features-list">
+                                <li>Prompts avançados para negócios</li>
+                                <li>Automação de processos</li>
+                                <li>Criação de chatbots comerciais</li>
+                                <li>Consultoria em IA</li>
+                                <li>Escalabilidade de negócios</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-pricing">
+                            <div class="price-original">De R$ 197,00</div>
+                            <div class="price-current">R$ 60,00</div>
+                            <div class="price-installments">ou 6x de R$ 10,00</div>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-primary-course">Inscrever-se</a>
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-secondary-course">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-in">
+                    <div class="course-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    
+                    <div class="course-content">
+                        <span class="course-category">Criativo</span>
+                        <h3 class="course-title">Design e Arte com IA</h3>
+                        <p class="course-description">
+                            Aprenda a criar designs profissionais e arte digital usando ferramentas de IA. Perfeito para designers e criadores de conteúdo.
+                        </p>
+                        
+                        <div class="course-features">
+                            <h4>O que você vai aprender:</h4>
+                            <ul class="features-list">
+                                <li>Midjourney e DALL-E avançado</li>
+                                <li>Canva com recursos de IA</li>
+                                <li>Criação de logos e identidades</li>
+                                <li>Arte para redes sociais</li>
+                                <li>Monetização de designs</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-pricing">
+                            <div class="price-original">De R$ 197,00</div>
+                            <div class="price-current">R$ 60,00</div>
+                            <div class="price-installments">ou 6x de R$ 10,00</div>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-primary-course">Inscrever-se</a>
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-secondary-course">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-in">
+                    <div class="course-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    
+                    <div class="course-content">
+                        <span class="course-category">Produtos Digitais</span>
+                        <h3 class="course-title">Criação de eBooks com IA</h3>
+                        <p class="course-description">
+                            Curso prático para criar e vender eBooks usando inteligência artificial. Do planejamento à monetização.
+                        </p>
+                        
+                        <div class="course-features">
+                            <h4>O que você vai aprender:</h4>
+                            <ul class="features-list">
+                                <li>Pesquisa de nichos lucrativos</li>
+                                <li>Criação de conteúdo com IA</li>
+                                <li>Design e formatação profissional</li>
+                                <li>Estratégias de venda</li>
+                                <li>Marketing para eBooks</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-pricing">
+                            <div class="price-original">De R$ 197,00</div>
+                            <div class="price-current">R$ 60,00</div>
+                            <div class="price-installments">ou 6x de R$ 10,00</div>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-primary-course">Inscrever-se</a>
+                            <a href="blog/como-criar-ebooks-ia-vender-online.html" class="btn-course btn-secondary-course">Artigo Grátis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-in">
+                    <div class="course-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    
+                    <div class="course-content">
+                        <span class="course-category">Conteúdo</span>
+                        <h3 class="course-title">YouTube e IA: Criação de Conteúdo</h3>
+                        <p class="course-description">
+                            Aprenda a criar conteúdo para YouTube usando ferramentas de IA. Scripts, thumbnails, edição e monetização.
+                        </p>
+                        
+                        <div class="course-features">
+                            <h4>O que você vai aprender:</h4>
+                            <ul class="features-list">
+                                <li>Criação de scripts com IA</li>
+                                <li>Thumbnails automáticas</li>
+                                <li>Edição assistida por IA</li>
+                                <li>SEO para YouTube</li>
+                                <li>Monetização de canais</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-pricing">
+                            <div class="price-original">De R$ 197,00</div>
+                            <div class="price-current">R$ 60,00</div>
+                            <div class="price-installments">ou 6x de R$ 10,00</div>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-primary-course">Inscrever-se</a>
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-secondary-course">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card fade-in">
+                    <div class="course-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    
+                    <div class="course-content">
+                        <span class="course-category">Negócios</span>
+                        <h3 class="course-title">Consultoria em IA para Empresas</h3>
+                        <p class="course-description">
+                            Torne-se um consultor especializado em implementação de IA para empresas. Mercado em alta com excelente remuneração.
+                        </p>
+                        
+                        <div class="course-features">
+                            <h4>O que você vai aprender:</h4>
+                            <ul class="features-list">
+                                <li>Análise de processos empresariais</li>
+                                <li>Implementação de soluções IA</li>
+                                <li>Precificação de consultoria</li>
+                                <li>Captação de clientes</li>
+                                <li>Gestão de projetos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-pricing">
+                            <div class="price-original">De R$ 197,00</div>
+                            <div class="price-current">R$ 60,00</div>
+                            <div class="price-installments">ou 6x de R$ 10,00</div>
+                        </div>
+                        
+                        <div class="course-actions">
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-primary-course">Inscrever-se</a>
+                            <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="btn-course btn-secondary-course">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia de eBooks -->
+    <section class="ebook-guide">
+        <div class="container">
+            <div class="guide-content">
+                <div class="section-title fade-in">
+                    <h2>Como Começar com eBooks</h2>
+                    <p>Seu guia completo para criar e vender eBooks com IA</p>
+                </div>
+                
+                <div class="guide-steps">
+                    <div class="guide-step fade-in">
+                        <div class="step-number">1</div>
+                        <h3>Escolha seu Nicho</h3>
+                        <p>Identifique um tópico que você domina ou tem interesse em aprender. Pesquise a demanda e concorrência no mercado.</p>
+                    </div>
+                    
+                    <div class="guide-step fade-in">
+                        <div class="step-number">2</div>
+                        <h3>Crie o Conteúdo</h3>
+                        <p>Use ferramentas de IA como ChatGPT para pesquisar, estruturar e escrever seu eBook. Sempre revise e personalize o conteúdo.</p>
+                    </div>
+                    
+                    <div class="guide-step fade-in">
+                        <div class="step-number">3</div>
+                        <h3>Design Profissional</h3>
+                        <p>Crie uma capa atrativa e formate o interior usando Canva ou ferramentas similares. A apresentação é crucial para as vendas.</p>
+                    </div>
+                    
+                    <div class="guide-step fade-in">
+                        <div class="step-number">4</div>
+                        <h3>Publique e Venda</h3>
+                        <p>Escolha plataformas como Amazon Kindle, Hotmart ou seu próprio site. Desenvolva uma estratégia de marketing para promover seu eBook.</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="blog/como-criar-ebooks-ia.html" class="btn btn-primary">Leia o Guia Completo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>O que Nossos Alunos Dizem</h2>
+                <p>Histórias reais de sucesso com IA</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="rating-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Consegui criar meu primeiro eBook em apenas 2 semanas usando as técnicas ensinadas. Já vendi mais de 500 cópias e estou planejando o próximo!"
+                    </p>
+                    <div class="testimonial-author">Maria Silva</div>
+                    <div class="testimonial-role">Criadora de Conteúdo</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="rating-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "O curso de consultoria em IA mudou minha carreira. Agora atendo empresas e ganho 5x mais do que no meu emprego anterior."
+                    </p>
+                    <div class="testimonial-author">João Santos</div>
+                    <div class="testimonial-role">Consultor em IA</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="rating-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "As ferramentas de design com IA revolucionaram meu trabalho. Consigo criar muito mais em menos tempo e com qualidade superior."
+                    </p>
+                    <div class="testimonial-author">Ana Costa</div>
+                    <div class="testimonial-role">Designer Freelancer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+        <div class="container" style="text-align: center;">
+            <div class="fade-in">
+                <h2 style="color: white; margin-bottom: 1rem;">Pronto para Transformar sua Vida?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Junte-se a milhares de pessoas que já estão monetizando com IA</p>
+                <a href="#" class="btn btn-outline">Escolher Curso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GanheComIA</h3>
+                    <p>Sua fonte confiável para aprender e monetizar com Inteligência Artificial.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <a href="index.html#inicio">Início</a>
+                    <a href="index.html#como-funciona">Como Funciona</a>
+                    <a href="index.html#artigos">Artigos</a>
+                    <a href="ferramentas.html">Ferramentas</a>
+                    <a href="cursos-ebooks.html">Cursos & eBooks</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Artigos Populares</h3>
+                    <a href="blog/10-formas-ganhar-dinheiro-chatgpt.html">10 Formas de Ganhar com ChatGPT</a>
+                    <a href="blog/como-criar-ebooks-ia.html">Criar eBooks com IA</a>
+                    <a href="blog/melhores-ferramentas-ia-iniciantes.html">Ferramentas Gratuitas de IA</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@ganhecomia.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 GanheComIA. Todos os direitos reservados. | <a href="#" style="color: #999;">Política de Privacidade</a> | <a href="#" style="color: #999;">Termos de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

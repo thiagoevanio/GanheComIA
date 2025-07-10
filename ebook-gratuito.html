@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baixe grátis o e-book '10 Ideias para Ganhar Dinheiro com IA'. Estratégias práticas e comprovadas para monetizar inteligência artificial.">
+    <meta name="keywords" content="e-book gratuito IA, ganhar dinheiro IA, download grátis, inteligência artificial, monetização IA">
+    <meta name="author" content="GanheComIA">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ganhecomia.com.br/ebook-gratuito">
+    <meta property="og:title" content="E-book Gratuito: 10 Ideias para Ganhar Dinheiro com IA">
+    <meta property="og:description" content="Baixe grátis o e-book '10 Ideias para Ganhar Dinheiro com IA'. Estratégias práticas e comprovadas para monetizar inteligência artificial.">
+    <meta property="og:image" content="img/ebook_ai.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ganhecomia.com.br/ebook-gratuito">
+    <meta property="twitter:title" content="E-book Gratuito: 10 Ideias para Ganhar Dinheiro com IA">
+    <meta property="twitter:description" content="Baixe grátis o e-book '10 Ideias para Ganhar Dinheiro com IA'. Estratégias práticas e comprovadas para monetizar inteligência artificial.">
+    <meta property="twitter:image" content="img/ebook_ai.jpg">
+
+    <title>E-book Gratuito: 10 Ideias para Ganhar Dinheiro com IA | GanheComIA</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .capture-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        
+        .capture-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .capture-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 600px;
+        }
+        
+        .capture-left {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .capture-right {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ebook-cover {
+            width: 250px;
+            height: 350px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+        }
+        
+        .ebook-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .ebook-subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .capture-form {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .download-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 1.2rem 2rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+        
+        .benefits-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .benefits-list li i {
+            color: var(--primary-color);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .trust-indicators {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .trust-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .capture-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .capture-left,
+            .capture-right {
+                padding: 2rem;
+            }
+            
+            .ebook-cover {
+                width: 200px;
+                height: 280px;
+            }
+        }
+    </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG6JFLXJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MEG6JFLXJZ');
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">GanheComIA</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="index.html#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
+                    <li><a href="cursos-ebooks.html" class="nav-link">Cursos</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Página de Captura -->
+    <main class="capture-page">
+        <div class="capture-container">
+            <div class="capture-content">
+                <div class="capture-left">
+                    <h1 style="color: var(--primary-color); margin-bottom: 1rem;">Baixe Grátis o E-book</h1>
+                    <h2 style="color: var(--text-color); margin-bottom: 2rem; font-size: 1.8rem;">"10 Ideias para Ganhar Dinheiro com IA"</h2>
+                    
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #666;">Descubra estratégias práticas e comprovadas para monetizar inteligência artificial, mesmo se você é iniciante. Este e-book contém tudo que você precisa para começar a ganhar dinheiro com IA hoje mesmo!</p>
+                    
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> 10 ideias práticas e testadas</li>
+                        <li><i class="fas fa-check-circle"></i> Passo a passo detalhado</li>
+                        <li><i class="fas fa-check-circle"></i> Ferramentas gratuitas incluídas</li>
+                        <li><i class="fas fa-check-circle"></i> Casos de sucesso reais</li>
+                        <li><i class="fas fa-check-circle"></i> Acesso imediato por email</li>
+                    </ul>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <div class="trust-number">5.000+</div>
+                            <div class="trust-label">Downloads</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">4.9★</div>
+                            <div class="trust-label">Avaliação</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">100%</div>
+                            <div class="trust-label">Gratuito</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capture-right">
+                    <div class="ebook-cover">
+                        <div class="ebook-title">10 IDEIAS PARA GANHAR DINHEIRO COM IA</div>
+                        <div class="ebook-subtitle">Guia Prático e Completo</div>
+                        <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">GanheComIA</div>
+                    </div>
+                    
+                    <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="download-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center;"><i class="fab fa-telegram-plane" style="margin-right: 10px;"></i> Entre agora no grupo do Telegram</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GanheComIA</h3>
+                    <p>Sua fonte confiável para aprender e monetizar com Inteligência Artificial.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://t.me/+hYzQJckf8Qw5Mzdh" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <a href="index.html">Início</a>
+                    <a href="index.html#como-funciona">Como Funciona</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="ferramentas.html">Ferramentas</a>
+                    <a href="cursos-ebooks.html">Cursos & eBooks</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Artigos Populares</h3>
+                    <a href="blog/10-formas-ganhar-dinheiro-chatgpt-2025.html">10 Formas de Ganhar com ChatGPT</a>
+                    <a href="blog/como-ganhar-dinheiro-internet-ia-2025.html">Ganhar Dinheiro na Internet com IA</a>
+                    <a href="blog/sites-que-pagam-usar-inteligencia-artificial.html">Sites que Pagam Usando IA</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> ganhecomia2026@gmail.com</p>
+                    <p><a href="https://t.me/+hYzQJckf8Qw5Mzdh" style="color: inherit; text-decoration: none;"><i class="fab fa-telegram-plane"></i> Telegram</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 GanheComIA. Todos os direitos reservados. | <a href="#" style="color: #999;">Política de Privacidade</a> | <a href="#" style="color: #999;">Termos de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <script>
+
+    </script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "E-book Gratuito: 10 Ideias para Ganhar Dinheiro com IA",
+        "description": "Baixe grátis o e-book '10 Ideias para Ganhar Dinheiro com IA'. Estratégias práticas e comprovadas para monetizar inteligência artificial.",
+        "url": "https://ganhecomia.com.br/ebook-gratuito",
+        "publisher": {
+            "@type": "Organization",
+            "name": "GanheComIA"
+        }
+    }
+    </script>
+</body>
+</html>
+
