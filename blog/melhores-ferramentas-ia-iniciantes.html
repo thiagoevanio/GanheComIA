@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra as melhores ferramentas gratuitas de IA para iniciantes. Guia completo com tutoriais e dicas práticas.">
+    <meta name="keywords" content="ferramentas IA gratuitas, inteligência artificial, iniciantes, ChatGPT, Canva, ferramentas grátis">
+    <meta name="author" content="GanheComIA">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ganhecomia.com.br/blog/melhores-ferramentas-ia-iniciantes.html">
+    <meta property="og:title" content="As Melhores Ferramentas Gratuitas de IA para Iniciantes">
+    <meta property="og:description" content="Descubra as melhores ferramentas gratuitas de IA para iniciantes. Guia completo com tutoriais e dicas práticas.">
+    <meta property="og:image" content="../img/free_ai_tools.jpg">
+
+    <title>As Melhores Ferramentas Gratuitas de IA para Iniciantes | GanheComIA</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .article-meta {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content {
+            line-height: 1.8;
+        }
+        
+        .article-content h2 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .article-content h3 {
+            color: var(--dark-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .tool-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .tool-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-right: 1rem;
+        }
+        
+        .tool-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        
+        .tool-category {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-left: auto;
+        }
+        
+        .tool-features {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .tool-features h4 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .feature-list li::before {
+            content: "✓";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .comparison-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .rating {
+            color: #ffc107;
+        }
+        
+        .back-to-home {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        body.dark-mode .tool-card {
+            background: var(--dark-secondary);
+            border-color: #444;
+        }
+        
+        body.dark-mode .highlight-box {
+            background: linear-gradient(135deg, var(--dark-secondary), #333);
+        }
+        
+        body.dark-mode .tool-features {
+            background: #333;
+        }
+        
+        body.dark-mode .comparison-table {
+            background: var(--dark-secondary);
+        }
+        
+        body.dark-mode .comparison-table td {
+            border-color: #444;
+        }
+        
+        body.dark-mode .comparison-table tr:hover {
+            background: #333;
+        }
+    </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG6JFLXJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MEG6JFLXJZ');
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="../index.html" class="logo">GanheComIA</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="../index.html#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="../index.html#artigos" class="nav-link">Artigos</a></li>
+                    <li><a href="../ferramentas.html" class="nav-link">Ferramentas</a></li>
+                    <li><a href="../cursos-ebooks.html" class="nav-link">Cursos</a></li>
+                    <li><a href="../index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="article-container">
+        <article>
+            <header class="article-header">
+                <div class="article-meta">
+                    <i class="fas fa-calendar"></i> Publicado em 8 de Janeiro de 2025 | 
+                    <i class="fas fa-clock"></i> 20 min de leitura |
+                    <i class="fas fa-user"></i> Por GanheComIA
+                </div>
+                <h1>As Melhores Ferramentas Gratuitas de IA para Iniciantes</h1>
+                <p style="font-size: 1.2rem; color: #666;">Descubra ferramentas poderosas de inteligência artificial que você pode usar gratuitamente para impulsionar sua produtividade e criatividade</p>
+            </header>
+
+            <div class="article-content">
+                <img src="../img/free_ai_tools.jpg" alt="Ferramentas gratuitas de IA" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 2rem;">
+
+                <div class="highlight-box">
+                    <p><strong>🚀 O que você encontrará aqui:</strong> Uma seleção cuidadosa das melhores ferramentas de IA gratuitas, organizadas por categoria, com tutoriais práticos e dicas para maximizar seu potencial. Perfeito para quem está começando no mundo da inteligência artificial.</p>
+                </div>
+
+                <p>A revolução da inteligência artificial está democratizando o acesso a tecnologias que antes eram exclusivas de grandes corporações. Hoje, qualquer pessoa pode usar ferramentas de IA poderosas sem gastar um centavo. Neste guia abrangente, você descobrirá as melhores opções gratuitas disponíveis no mercado.</p>
+
+                <p>Seja você um estudante, empreendedor, criador de conteúdo ou profissional em qualquer área, estas ferramentas podem transformar sua forma de trabalhar, aumentar sua produtividade e abrir novas possibilidades criativas que você nem imaginava.</p>
+
+                <h2>Por Que Começar com Ferramentas Gratuitas?</h2>
+
+                <p>Começar com ferramentas gratuitas de IA oferece várias vantagens estratégicas. Primeiro, permite experimentar diferentes tipos de IA sem compromisso financeiro, ajudando você a descobrir quais se adequam melhor ao seu estilo de trabalho e necessidades específicas.</p>
+
+                <p>Segundo, muitas ferramentas gratuitas oferecem funcionalidades robustas que são mais do que suficientes para a maioria dos usuários iniciantes e intermediários. Terceiro, você pode aprender os conceitos fundamentais da IA sem pressão, construindo confiança antes de investir em soluções premium.</p>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Melhor Ferramenta Gratuita</th>
+                            <th>Avaliação</th>
+                            <th>Ideal Para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Texto e Escrita</td>
+                            <td>ChatGPT</td>
+                            <td><span class="rating">★★★★★</span></td>
+                            <td>Iniciantes e profissionais</td>
+                        </tr>
+                        <tr>
+                            <td>Design Gráfico</td>
+                            <td>Canva</td>
+                            <td><span class="rating">★★★★★</span></td>
+                            <td>Criadores de conteúdo</td>
+                        </tr>
+                        <tr>
+                            <td>Geração de Imagens</td>
+                            <td>DALL-E 2</td>
+                            <td><span class="rating">★★★★☆</span></td>
+                            <td>Artistas e designers</td>
+                        </tr>
+                        <tr>
+                            <td>Programação</td>
+                            <td>GitHub Copilot</td>
+                            <td><span class="rating">★★★★★</span></td>
+                            <td>Desenvolvedores</td>
+                        </tr>
+                        <tr>
+                            <td>Produtividade</td>
+                            <td>Notion AI</td>
+                            <td><span class="rating">★★★★☆</span></td>
+                            <td>Profissionais e estudantes</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Ferramentas de Texto e Escrita</h2>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <img src="../img/chatgpt_icon.png" alt="ChatGPT" class="tool-icon">
+                        <h3 class="tool-title">ChatGPT</h3>
+                        <span class="tool-category">Texto</span>
+                    </div>
+                    
+                    <p>O ChatGPT da OpenAI é, sem dúvida, a ferramenta de IA mais revolucionária dos últimos anos. Capaz de gerar textos, responder perguntas, criar código, traduzir idiomas e muito mais, é o ponto de partida perfeito para qualquer iniciante.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Principais Funcionalidades Gratuitas:</h4>
+                        <ul class="feature-list">
+                            <li>Geração de textos criativos e informativos</li>
+                            <li>Tradução entre mais de 50 idiomas</li>
+                            <li>Criação de código em diversas linguagens</li>
+                            <li>Análise e resumo de textos</li>
+                            <li>Brainstorming e geração de ideias</li>
+                            <li>Correção gramatical e estilística</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Como começar:</strong> Acesse chat.openai.com, crie uma conta gratuita e comece a experimentar. Dica: seja específico em seus prompts para obter melhores resultados.</p>
+                    
+                    <p><strong>Limitações da versão gratuita:</strong> Acesso limitado durante picos de uso e modelo GPT-3.5 (não o mais recente GPT-4).</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <img src="../img/notion_ai_icon.png" alt="Notion AI" class="tool-icon">
+                        <h3 class="tool-title">Grammarly</h3>
+                        <span class="tool-category">Escrita</span>
+                    </div>
+                    
+                    <p>Embora não seja exclusivamente uma ferramenta de IA, o Grammarly usa inteligência artificial avançada para melhorar sua escrita em tempo real. É especialmente útil para quem escreve em inglês ou está aprendendo o idioma.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Recursos Gratuitos:</h4>
+                        <ul class="feature-list">
+                            <li>Correção automática de gramática e ortografia</li>
+                            <li>Sugestões de clareza e concisão</li>
+                            <li>Detecção de tom de escrita</li>
+                            <li>Integração com navegadores e aplicativos</li>
+                            <li>Relatórios semanais de desempenho</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Ideal para:</strong> Estudantes, profissionais que escrevem em inglês, criadores de conteúdo internacional.</p>
+                </div>
+
+                <h2>Ferramentas de Design e Criação Visual</h2>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <img src="../img/canva_icon.png" alt="Canva" class="tool-icon">
+                        <h3 class="tool-title">Canva</h3>
+                        <span class="tool-category">Design</span>
+                    </div>
+                    
+                    <p>O Canva revolucionou o design gráfico ao torná-lo acessível para todos. Com recursos de IA integrados, você pode criar designs profissionais mesmo sem experiência prévia em design.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Recursos de IA Gratuitos:</h4>
+                        <ul class="feature-list">
+                            <li>Magic Resize - redimensiona designs automaticamente</li>
+                            <li>Background Remover - remove fundos de imagens</li>
+                            <li>Magic Write - gera textos para seus designs</li>
+                            <li>Sugestões automáticas de design</li>
+                            <li>Milhares de templates gratuitos</li>
+                            <li>Biblioteca de elementos e fotos</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Casos de uso:</strong> Posts para redes sociais, apresentações, cartões de visita, logos simples, infográficos, capas de eBooks.</p>
+                    
+                    <p><strong>Dica profissional:</strong> Use o Magic Write para gerar textos persuasivos para seus designs de marketing.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <img src="../img/dalle_icon.png" alt="DALL-E" class="tool-icon">
+                        <h3 class="tool-title">DALL-E 2</h3>
+                        <span class="tool-category">Imagens</span>
+                    </div>
+                    
+                    <p>O DALL-E 2 da OpenAI é uma ferramenta revolucionária que cria imagens a partir de descrições textuais. É perfeita para gerar ilustrações únicas, conceitos visuais e arte digital.</p>
+                    
+                    <div class="tool-features">
+                        <h4>O que você pode criar:</h4>
+                        <ul class="feature-list">
+                            <li>Ilustrações personalizadas para blogs</li>
+                            <li>Conceitos visuais para produtos</li>
+                            <li>Arte digital única</li>
+                            <li>Mockups e protótipos visuais</li>
+                            <li>Imagens para redes sociais</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Créditos gratuitos:</strong> 15 créditos no primeiro mês, depois 15 créditos mensais gratuitos.</p>
+                    
+                    <p><strong>Dica:</strong> Seja descritivo em seus prompts. Em vez de "um gato", tente "um gato laranja dormindo em uma poltrona vintage azul, estilo aquarela".</p>
+                </div>
+
+                <h2>Ferramentas de Produtividade e Organização</h2>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <img src="../img/notion_ai_icon.png" alt="Notion AI" class="tool-icon">
+                        <h3 class="tool-title">Notion AI</h3>
+                        <span class="tool-category">Produtividade</span>
+                    </div>
+                    
+                    <p>O Notion já era uma ferramenta poderosa de produtividade, e com a integração da IA, tornou-se ainda mais impressionante. Perfeito para organizar projetos, criar documentos e gerenciar conhecimento.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Recursos de IA:</h4>
+                        <ul class="feature-list">
+                            <li>Geração automática de conteúdo</li>
+                            <li>Resumo de textos longos</li>
+                            <li>Tradução de documentos</li>
+                            <li>Criação de listas e tabelas</li>
+                            <li>Brainstorming assistido por IA</li>
+                            <li>Correção e melhoria de textos</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Versão gratuita:</strong> Inclui algumas consultas de IA por mês, suficientes para uso pessoal básico.</p>
+                    
+                    <p><strong>Ideal para:</strong> Estudantes, freelancers, pequenas equipes, gestão de projetos pessoais.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div style="width: 50px; height: 50px; background: #4285f4; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fab fa-google" style="color: white; font-size: 1.5rem;"></i>
+                        </div>
+                        <h3 class="tool-title">Google Bard</h3>
+                        <span class="tool-category">Assistente</span>
+                    </div>
+                    
+                    <p>O Google Bard é o assistente de IA do Google, integrado ao vasto conhecimento da empresa. Excelente para pesquisas, análises e tarefas que requerem informações atualizadas.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Vantagens do Bard:</h4>
+                        <ul class="feature-list">
+                            <li>Acesso a informações em tempo real</li>
+                            <li>Integração com serviços Google</li>
+                            <li>Múltiplas versões de resposta</li>
+                            <li>Capacidade de pesquisa avançada</li>
+                            <li>Análise de dados e tendências</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Diferencial:</strong> Enquanto o ChatGPT tem conhecimento limitado até 2021, o Bard pode acessar informações mais recentes.</p>
+                </div>
+
+                <h2>Ferramentas para Desenvolvedores</h2>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div style="width: 50px; height: 50px; background: #24292e; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fab fa-github" style="color: white; font-size: 1.5rem;"></i>
+                        </div>
+                        <h3 class="tool-title">GitHub Copilot</h3>
+                        <span class="tool-category">Programação</span>
+                    </div>
+                    
+                    <p>O GitHub Copilot é um assistente de programação alimentado por IA que sugere código em tempo real. Revoluciona a forma como desenvolvedores escrevem código, aumentando significativamente a produtividade.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Funcionalidades:</h4>
+                        <ul class="feature-list">
+                            <li>Sugestões de código em tempo real</li>
+                            <li>Suporte a dezenas de linguagens</li>
+                            <li>Geração de funções completas</li>
+                            <li>Comentários automáticos</li>
+                            <li>Testes unitários sugeridos</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Gratuito para:</strong> Estudantes verificados, mantenedores de projetos open source populares.</p>
+                    
+                    <p><strong>Linguagens suportadas:</strong> Python, JavaScript, TypeScript, Ruby, Go, C#, C++, Java, PHP, e muitas outras.</p>
+                </div>
+
+                <h2>Ferramentas de Áudio e Vídeo</h2>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <img src="../img/pictory_icon.png" alt="Pictory" class="tool-icon">
+                        <h3 class="tool-title">Loom AI</h3>
+                        <span class="tool-category">Vídeo</span>
+                    </div>
+                    
+                    <p>O Loom integrou recursos de IA para tornar a criação e edição de vídeos mais eficiente. Perfeito para criadores de conteúdo, educadores e profissionais que precisam comunicar visualmente.</p>
+                    
+                    <div class="tool-features">
+                        <h4>Recursos de IA:</h4>
+                        <ul class="feature-list">
+                            <li>Transcrição automática de vídeos</li>
+                            <li>Geração de títulos inteligentes</li>
+                            <li>Resumos automáticos</li>
+                            <li>Remoção de "uhms" e pausas</li>
+                            <li>Legendas automáticas</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Plano gratuito:</strong> Até 25 vídeos por pessoa, com recursos básicos de IA incluídos.</p>
+                </div>
+
+                <h2>Como Maximizar o Uso das Ferramentas Gratuitas</h2>
+
+                <h3>1. Combine Ferramentas para Workflows Poderosos</h3>
+                <p>A verdadeira magia acontece quando você combina diferentes ferramentas. Por exemplo: use o ChatGPT para gerar ideias de conteúdo, o Canva para criar visuais e o Notion para organizar tudo.</p>
+
+                <h3>2. Aprenda os Prompts Certos</h3>
+                <p>A qualidade dos resultados depende muito de como você se comunica com a IA. Invista tempo aprendendo a criar prompts eficazes para cada ferramenta.</p>
+
+                <h3>3. Estabeleça Rotinas de Uso</h3>
+                <p>Integre essas ferramentas em suas rotinas diárias. Por exemplo, use o Grammarly sempre que escrever, o Canva para todos os designs, e o ChatGPT para brainstorming.</p>
+
+                <h3>4. Mantenha-se Atualizado</h3>
+                <p>O mundo da IA evolui rapidamente. Siga os blogs oficiais das ferramentas, participe de comunidades online e experimente novos recursos assim que são lançados.</p>
+
+                <h3>5. Documente Seus Aprendizados</h3>
+                <p>Mantenha um registro dos prompts que funcionam bem, workflows eficazes e descobertas interessantes. Isso criará sua própria base de conhecimento em IA.</p>
+
+                <h2>Dicas para Iniciantes</h2>
+
+                <div class="highlight-box">
+                    <p><strong>🎯 Comece Pequeno:</strong> Não tente usar todas as ferramentas de uma vez. Escolha 2-3 que se alinham com suas necessidades imediatas e domine-as antes de expandir.</p>
+                </div>
+
+                <p><strong>Experimente Sem Medo:</strong> As ferramentas gratuitas são perfeitas para experimentação. Teste diferentes abordagens, prompts e workflows sem se preocupar com custos.</p>
+
+                <p><strong>Junte-se a Comunidades:</strong> Participe de grupos no Discord, Reddit ou Facebook dedicados a IA. A troca de experiências acelera muito o aprendizado.</p>
+
+                <p><strong>Pratique Regularmente:</strong> Como qualquer habilidade, o uso eficaz de IA melhora com a prática. Dedique pelo menos 30 minutos por dia explorando essas ferramentas.</p>
+
+                <p><strong>Mantenha a Ética em Mente:</strong> Use as ferramentas de forma responsável, respeitando direitos autorais e sendo transparente sobre o uso de IA quando necessário.</p>
+
+                <h2>Próximos Passos</h2>
+
+                <p>Agora que você conhece as melhores ferramentas gratuitas de IA, é hora de colocar a mão na massa. Comece escolhendo uma ferramenta de cada categoria que mais se alinha com seus objetivos atuais.</p>
+
+                <p>Lembre-se: a IA não substitui a criatividade humana, mas a amplifica. Use essas ferramentas como parceiras em sua jornada criativa e profissional, sempre mantendo seu toque pessoal e julgamento crítico.</p>
+
+                <p>O futuro pertence àqueles que sabem trabalhar em harmonia com a inteligência artificial. Comece hoje mesmo e posicione-se à frente da curva tecnológica.</p>
+
+                <div class="highlight-box">
+                    <p><strong>🚀 Desafio da Semana:</strong> Escolha uma ferramenta desta lista que você nunca usou e dedique 1 hora explorando suas funcionalidades. Compartilhe sua experiência nas redes sociais com a hashtag #GanheComIA.</p>
+                </div>
+            </div>
+
+            <div class="back-to-home">
+                <a href="../index.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Voltar para o Início
+                </a>
+                <a href="../index.html#artigos" class="btn btn-outline" style="margin-left: 1rem;">
+                    Ver Mais Artigos
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
