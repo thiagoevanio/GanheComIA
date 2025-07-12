@@ -14,22 +14,31 @@
     <meta property="og:description" content="Descubra as melhores ferramentas gratuitas de IA para iniciantes. Lista completa com tutoriais e dicas para começar a monetizar sem investimento inicial.">
     <meta property="og:image" content="../img/free_ai_tools.jpg">
 
-    <title>As Melhores Ferramentas Gratuitas de IA para Iniciantes | GanheComIA</title>
+    <title>As Melhores Ferramentas Gratuita | GanheComIA</title>
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
+ <style>
         .article-container {
-            max-width: 800px;
+            max-width: 800px; /* Aumentei o max-width para maior largura */
             margin: 0 auto;
-            padding: 2rem;
-            line-height: 1.8;
+            padding: 120px 20px 80px;
         }
         
         .article-header {
             text-align: center;
             margin-bottom: 3rem;
+        }
+        
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
         }
         
         .article-meta {
@@ -41,6 +50,14 @@
             color: #666;
         }
         
+        .category-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        
         .article-image {
             width: 100%;
             height: 400px;
@@ -49,58 +66,89 @@
             margin: 2rem 0;
         }
         
-        .tool-card {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-left: 4px solid var(--primary-color);
-        }
-        
-        .tool-card h3 {
+        .article-content h2 {
             color: var(--primary-color);
+            margin-top: 2.5rem;
             margin-bottom: 1rem;
         }
         
-        .pros-cons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin: 2rem 0;
+        .article-content h3 {
+            color: var(--secondary-color);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
         }
         
-        .pros, .cons {
+        .article-content h4 {
+            color: var(--text-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .prompt-example {
             background: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        
+        .prompt-structure {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: 1px solid #dee2e6;
             padding: 1.5rem;
+            margin: 2rem 0;
             border-radius: 10px;
         }
         
-        .pros {
-            border-left: 4px solid #28a745;
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
         }
         
-        .cons {
-            border-left: 4px solid #dc3545;
+        .tag {
+            background: #f0f0f0;
+            color: #666;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
         }
         
         @media (max-width: 768px) {
-            .pros-cons {
-                grid-template-columns: 1fr;
-            }
-            
             .article-container {
                 padding: 1rem;
             }
+            
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .article-image {
+                height: 250px;
+            }
         }
-    </style>
 
+        /* Adicionado para tentar corrigir o título */
+        .article-header h1 {
+            white-space: normal; /* Permite que o texto quebre linha */
+            overflow: visible; /* Garante que o texto não seja cortado */
+            text-overflow: clip; /* Garante que o texto não seja cortado */
+            max-width: 100%; /* Garante que o título não exceda a largura do contêiner */
+            word-wrap: break-word; /* Quebra palavras longas */
+        }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG6JFLXJZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-MEG6JFLXJZ');
+  gtag("js", new Date());
+  gtag("config", "G-MEG6JFLXJZ");
 </script>
 
 </head>
@@ -114,7 +162,7 @@
                 <ul class="nav-menu">
                     <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
                     <li><a href="../index.html#como-funciona" class="nav-link">Como Funciona</a></li>
-                    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                    
                     <li><a href="../ferramentas.html" class="nav-link">Ferramentas</a></li>
                     <li><a href="../cursos-ebooks.html" class="nav-link">Cursos</a></li>
                     <li><a href="../index.html#contato" class="nav-link">Contato</a></li>
@@ -201,7 +249,7 @@
                 <div class="tool-card">
                     <h3><i class="fas fa-video"></i> Lumen5</h3>
                     <p><strong>O que faz:</strong> Criação de vídeos a partir de texto usando IA.</p>
-                    <p><strong>Versão gratuita:</strong> Vídeos com marca d'água, templates básicos.</p>
+                    <p><strong>Versão gratuita:</strong> Vídeos com marca d\'água, templates básicos.</p>
                     <p><strong>Como monetizar:</strong> Criação de vídeos para redes sociais de clientes, conteúdo para YouTube.</p>
                 </div>
 
@@ -256,7 +304,7 @@
                         <ul>
                             <li>Limites de uso diário/mensal</li>
                             <li>Funcionalidades reduzidas</li>
-                            <li>Marcas d'água em alguns casos</li>
+                            <li>Marcas d\'água em alguns casos</li>
                             <li>Suporte limitado</li>
                             <li>Possível descontinuação</li>
                         </ul>
@@ -290,7 +338,7 @@
         </article>
 
         <div class="back-to-blog" style="text-align: center; margin: 3rem 0;">
-            <a href="../blog.html" class="btn btn-primary">← Voltar ao Blog</a>
+            <a href="../index.html#artigos" class="btn btn-primary">← Voltar aos artigos</a>
         </div>
     </main>
 
@@ -376,4 +424,5 @@
     </script>
 </body>
 </html>
+
 

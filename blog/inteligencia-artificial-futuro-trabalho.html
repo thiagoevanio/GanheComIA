@@ -11,7 +11,79 @@
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+<style>
+        .article-container {
+            max-width: 800px; /* Aumentei o max-width para maior largura */
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .tool-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .tool-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pros, .cons {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .pros {
+            border-left: 4px solid #28a745;
+        }
+        
+        .cons {
+            border-left: 4px solid #dc3545;
+        }
+        
+        @media (max-width: 768px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+            
+            .article-container {
+                padding: 1rem;
+            }
+        }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG6JFLXJZ"></script>
 <script>
@@ -32,7 +104,7 @@
                 <ul class="nav-menu">
                     <li><a href="../index.html#inicio" class="nav-link">Início</a></li>
                     <li><a href="../index.html#como-funciona" class="nav-link">Como Funciona</a></li>
-                    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                    
                     <li><a href="../ferramentas.html" class="nav-link">Ferramentas</a></li>
                     <li><a href="../cursos-ebooks.html" class="nav-link">Cursos</a></li>
                     <li><a href="../index.html#contato" class="nav-link">Contato</a></li>

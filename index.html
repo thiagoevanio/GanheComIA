@@ -52,7 +52,7 @@
                 <ul class="nav-menu">
                     <li><a href="#inicio" class="nav-link">Início</a></li>
                     <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="#artigos" class="nav-link">Artigos</a></li>
                     <li><a href="ferramentas.html" class="nav-link">Ferramentas</a></li>
                     <li><a href="cursos-ebooks.html" class="nav-link">Cursos</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
@@ -111,39 +111,315 @@
         </div>
     </section>
 
-    <!-- Artigos em Destaque -->
+    
+    <!-- Todos os Artigos -->
     <section id="artigos" class="section">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Artigos em Destaque</h2>
-                <p>Conteúdo prático e atualizado para você dominar a monetização com IA</p>
+                <h2>Todos os Artigos</h2>
+                <p>Conteúdo completo sobre como ganhar dinheiro com Inteligência Artificial</p>
             </div>
             
-            <div class="cards-grid">
+            <!-- Filtros de Categoria -->
+            <div class="blog-categories" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem;">
+                <button class="category-btn active" data-category="todos" style="padding: 0.5rem 1rem; border: 2px solid var(--primary-color); background: var(--primary-color); color: white; border-radius: 25px; cursor: pointer; transition: var(--transition);">Todos os Artigos</button>
+                <button class="category-btn" data-category="ia-monetizacao" style="padding: 0.5rem 1rem; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: var(--transition);">IA e Monetização</button>
+                <button class="category-btn" data-category="ferramentas" style="padding: 0.5rem 1rem; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: var(--transition);">Ferramentas</button>
+                <button class="category-btn" data-category="tutoriais" style="padding: 0.5rem 1rem; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: var(--transition);">Tutoriais</button>
+                <button class="category-btn" data-category="seguranca" style="padding: 0.5rem 1rem; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: var(--transition);">Segurança</button>
+                <button class="category-btn" data-category="tecnologia" style="padding: 0.5rem 1rem; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: 25px; cursor: pointer; transition: var(--transition);">Tecnologia</button>
+            </div>
+            
+            <!-- Barra de Pesquisa -->
+            <div style="max-width: 500px; margin: 0 auto 3rem;">
+                <div style="position: relative;">
+                    <input type="text" id="searchInput" placeholder="Pesquisar artigos..." style="width: 100%; padding: 1rem 3rem 1rem 1rem; border: 2px solid #e0e0e0; border-radius: 50px; font-size: 1rem; outline: none;">
+                    <button style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: var(--primary-color); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer;">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="cards-grid" id="articlesGrid">
+                
                 <article class="card fade-in">
-                    <img src="img/chatgpt_money.png" alt="Ganhar dinheiro com ChatGPT" class="card-image">
+                    <img src="img/chatgpt_money.png" alt="10 Formas Reais de Ganhar Dinheiro com ChatGPT" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">10 Formas Reais de Ganhar Dinheiro com ChatGPT</h3>
-                        <p class="card-description">Descubra métodos comprovados para monetizar o ChatGPT e gerar renda extra todos os meses.</p>
+                        <p class="card-description">Descubra 10 formas comprovadas de ganhar dinheiro com ChatGPT. Métodos práticos e estratégias reais para monetizar a IA.</p>
                         <a href="blog/10-formas-ganhar-dinheiro-chatgpt.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="card fade-in">
-                    <img src="img/ebook_ai.jpg" alt="Criar eBooks com IA" class="card-image">
+                    <img src="img/chatgpt_dinheiro_1.jpg" alt="10 Formas Reais de Ganhar Dinheiro com ChatGPT em 2025" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">10 Formas Reais de Ganhar Dinheiro com ChatGPT em 2025</h3>
+                        <p class="card-description">Descubra 10 formas reais e comprovadas de ganhar dinheiro com ChatGPT em 2025. Estratégias práticas para gerar renda extra usando inteligência artificial.</p>
+                        <a href="blog/10-formas-ganhar-dinheiro-chatgpt-2025.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/agentes_ia_autonomos.jpg" alt="Agentes de IA Autônomos: Como Ganhar R$ 15.000/Mês Sendo o 'Chefe' de Robôs Inteligentes - GanheComIA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Agentes de IA Autônomos: Como Ganhar R$ 15.000/Mês Sendo o 'Chefe' de Robôs Inteligentes - GanheComIA</h3>
+                        <p class="card-description">Descubra como os Agentes de IA Autônomos estão revolucionando o mercado de trabalho e criando oportunidades de renda de até R$ 15.000 mensais para quem souber aproveitá-las.</p>
+                        <a href="blog/agentes-ia-autonomos-futuro-trabalho.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ameacas_ciberneticas.jpg" alt="Ameaças Cibernéticas Emergentes e Como se Proteger" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Ameaças Cibernéticas Emergentes e Como se Proteger</h3>
+                        <p class="card-description">Descubra as ameaças cibernéticas mais recentes e emergentes e aprenda as melhores estratégias para se proteger no cenário digital atual.</p>
+                        <a href="blog/ameacas-ciberneticas-emergentes.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_ferramentas_iniciantes.png" alt="As Melhores Ferramentas Gratuitas de IA para Iniciantes" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">As Melhores Ferramentas Gratuitas de IA para Iniciantes</h3>
+                        <p class="card-description">Descubra as melhores ferramentas gratuitas de IA para iniciantes. Lista completa com tutoriais e dicas para começar a monetizar sem investimento inicial.</p>
+                        <a href="blog/melhores-ferramentas-ia-gratuitas-iniciantes.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/free_ai_tools.jpg" alt="As Melhores Ferramentas Gratuitas de IA para Iniciantes" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">As Melhores Ferramentas Gratuitas de IA para Iniciantes</h3>
+                        <p class="card-description">Descubra as melhores ferramentas gratuitas de IA para iniciantes. Guia completo com tutoriais e dicas práticas.</p>
+                        <a href="blog/melhores-ferramentas-ia-iniciantes.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/backup_recuperacao_dados.jpg" alt="Backup e Recuperação de Dados: A Importância de Proteger Suas Informações" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Backup e Recuperação de Dados: A Importância de Proteger Suas Informações</h3>
+                        <p class="card-description">Entenda a importância do backup e da recuperação de dados para proteger suas informações contra perdas, ataques cibernéticos e falhas de hardware.</p>
+                        <a href="blog/backup-recuperacao-dados.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_casos_sucesso_v2.png" alt="Casos de Sucesso: Quem Está Ganhando com IA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Casos de Sucesso: Quem Está Ganhando com IA</h3>
+                        <p class="card-description">Histórias reais de pessoas que transformaram suas vidas financeiras usando inteligência artificial.</p>
+                        <a href="blog/casos-sucesso-ganhando-dinheiro-ia.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ciberseguranca_tendencias.jpg" alt="Cibersegurança: Tendências e Previsões para 2025" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Cibersegurança: Tendências e Previsões para 2025</h3>
+                        <p class="card-description">Explore as principais tendências e previsões em cibersegurança para 2025. Prepare-se para os desafios e proteja-se contra ameaças emergentes.</p>
+                        <a href="blog/ciberseguranca-tendencias-2025.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ebookvendas.png" alt="Como Criar eBooks com IA e Vender Online" class="card-image">
                     <div class="card-content">
                         <h3 class="card-title">Como Criar eBooks com IA e Vender Online</h3>
-                        <p class="card-description">Aprenda a criar e vender eBooks usando inteligência artificial, do planejamento à venda.</p>
+                        <p class="card-description">Aprenda como criar e vender eBooks usando inteligência artificial. Guia completo do planejamento à venda, com ferramentas gratuitas e estratégias comprovadas.</p>
+                        <a href="blog/como-criar-ebooks-ia-vender-online.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ebook_ai.jpg" alt="Como Criar eBooks com IA e Vender Online" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Como Criar eBooks com IA e Vender Online</h3>
+                        <p class="card-description">Aprenda como criar e vender eBooks usando inteligência artificial. Guia completo do planejamento à monetização.</p>
                         <a href="blog/como-criar-ebooks-ia.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
-                
                 <article class="card fade-in">
-                    <img src="img/free_ai_tools.jpg" alt="Ferramentas gratuitas de IA" class="card-image">
+                    <img src="img/ia_dinheiro_1.png" alt="Como Ganhar Dinheiro na Internet com IA em 2025" class="card-image">
                     <div class="card-content">
-                        <h3 class="card-title">As Melhores Ferramentas Gratuitas de IA para Iniciantes</h3>
-                        <p class="card-description">Conheça as ferramentas de IA gratuitas mais poderosas para começar sua jornada de monetização.</p>
-                        <a href="blog/melhores-ferramentas-ia-iniciantes.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="card-title">Como Ganhar Dinheiro na Internet com IA em 2025</h3>
+                        <p class="card-description">Guia completo sobre como ganhar dinheiro na internet com inteligência artificial em 2025. Estratégias práticas, ferramentas e métodos comprovados para renda online.</p>
+                        <a href="blog/como-ganhar-dinheiro-internet-ia-2025.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/seguranca_digital.jpg" alt="Como Proteger Seus Dados Pessoais na Era Digital: Guia Completo 2025" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Como Proteger Seus Dados Pessoais na Era Digital: Guia Completo 2025</h3>
+                        <p class="card-description">Aprenda como proteger seus dados pessoais na era digital com este guia completo 2025. Dicas práticas, ferramentas e estratégias de segurança online.</p>
+                        <a href="blog/como-proteger-dados-pessoais-era-digital-2025.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/crinadoconteudo.png" alt="Criando Conteúdo Visual com IA para Redes Sociais" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Criando Conteúdo Visual com IA para Redes Sociais</h3>
+                        <p class="card-description">Como usar ferramentas de IA para criar conteúdo visual atrativo e monetizar suas redes sociais.</p>
+                        <a href="blog/criando-conteudo-visual-ia-redes-sociais.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/educacao_digital.jpeg" alt="Educação Digital e Cidadania Online: Navegando com Responsabilidade no Mundo Conectado" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Educação Digital e Cidadania Online: Navegando com Responsabilidade no Mundo Conectado</h3>
+                        <p class="card-description">Descubra a importância da educação digital e da cidadania online para navegar com segurança e responsabilidade no mundo conectado.</p>
+                        <a href="blog/educacao-digital-cidadania-online.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/engenharia_social.jpeg" alt="Engenharia Social: A Arte da Manipulação e Como se Proteger" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Engenharia Social: A Arte da Manipulação e Como se Proteger</h3>
+                        <p class="card-description">Descubra o que é engenharia social e como os cibercriminosos manipulam suas vítimas. Aprenda a se proteger contra táticas de persuasão e golpes online.</p>
+                        <a href="blog/engenharia-social-como-se-proteger.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_ganhar_dinheiro.png" alt="Ferramentas de IA para Ganhar Dinheiro: Guia Completo 2025" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Ferramentas de IA para Ganhar Dinheiro: Guia Completo 2025</h3>
+                        <p class="card-description">Análise detalhada das melhores ferramentas de IA para monetização, com comparações, preços e casos de uso práticos.</p>
+                        <a href="blog/ferramentas-ia-ganhar-dinheiro-guia-completo.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_conversacional_avancada.jpg" alt="IA Conversacional Avançada: Como Criar Chatbots que Vendem R$ 50.000+ Por Mês no Piloto Automático - GanheComIA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">IA Conversacional Avançada: Como Criar Chatbots que Vendem R$ 50.000+ Por Mês no Piloto Automático - GanheComIA</h3>
+                        <p class="card-description">Descubra como a IA Conversacional Avançada está revolucionando o atendimento ao cliente e como você pode faturar R$ 12.000+ mensais criando chatbots inteligentes que vendem sozinhos.</p>
+                        <a href="blog/ia-conversacional-avancada-chatbots-inteligentes.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_multimodal.jpg" alt="IA Multimodal: A Revolução Silenciosa que Está Transformando 2025 - GanheComIA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">IA Multimodal: A Revolução Silenciosa que Está Transformando 2025 - GanheComIA</h3>
+                        <p class="card-description">Descubra como a IA Multimodal está revolucionando 2025 e como você pode lucrar com essa tecnologia que processa texto, imagem, áudio e vídeo simultaneamente.</p>
+                        <a href="blog/ia-multimodal-revolucao-2025.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/automacao_processos_ia.jpg" alt="IA na Automação de Processos: Como Faturar R$ 20.000/Mês Transformando Empresas em Máquinas Eficientes - GanheComIA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">IA na Automação de Processos: Como Faturar R$ 20.000/Mês Transformando Empresas em Máquinas Eficientes - GanheComIA</h3>
+                        <p class="card-description">Descubra como a IA está revolucionando a automação de processos empresariais e como você pode lucrar até R$ 20.000 mensais oferecendo soluções de automação inteligente.</p>
+                        <a href="blog/ia-automacao-processos-empresariais-2025.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_previsao_demanda.jpg" alt="IA na Previsão de Demanda: Como Faturar R$ 22.000+ Mensais Sendo o 'Oráculo' dos Negócios - GanheComIA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">IA na Previsão de Demanda: Como Faturar R$ 22.000+ Mensais Sendo o 'Oráculo' dos Negócios - GanheComIA</h3>
+                        <p class="card-description">Descubra como a IA na Previsão de Demanda está revolucionando negócios e como você pode faturar R$ 22.000+ mensais ajudando empresas a prever o futuro e otimizar operações.</p>
+                        <a href="blog/ia-previsao-demanda-otimizacao-negocios.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_etica_transparente.jpg" alt="IA Ética e Transparente: Como Faturar R$ 18.000+ Mensais Sendo o 'Guardião' da IA Responsável - GanheComIA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">IA Ética e Transparente: Como Faturar R$ 18.000+ Mensais Sendo o 'Guardião' da IA Responsável - GanheComIA</h3>
+                        <p class="card-description">Descubra como a IA Ética e Transparente está se tornando obrigatória em 2025 e como você pode lucrar R$ 18.000+ mensais ajudando empresas a implementar soluções de IA responsáveis.</p>
+                        <a href="blog/ia-etica-transparente-futuro-responsavel.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/iafuturo.jpg" alt="Inteligência Artificial e o Futuro do Trabalho" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Inteligência Artificial e o Futuro do Trabalho</h3>
+                        <p class="card-description">Como a IA está transformando o mercado de trabalho e como se preparar para as oportunidades futuras.</p>
+                        <a href="blog/inteligencia-artificial-futuro-trabalho.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/lgpd.jpg" alt="LGPD: Seus Direitos e a Proteção de Dados no Brasil" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">LGPD: Seus Direitos e a Proteção de Dados no Brasil</h3>
+                        <p class="card-description">Entenda a Lei Geral de Proteção de Dados (LGPD) no Brasil. Conheça seus direitos e como a LGPD protege suas informações pessoais no ambiente digital.</p>
+                        <a href="blog/lgpd-seus-direitos-protecao-dados.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ia_ciberseguranca.jpg" alt="O Papel da Inteligência Artificial na Cibersegurança: Benefícios e Desafios" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">O Papel da Inteligência Artificial na Cibersegurança: Benefícios e Desafios</h3>
+                        <p class="card-description">Explore como a Inteligência Artificial está revolucionando a cibersegurança, desde a detecção de ameaças até a resposta a incidentes. Descubra os benefícios e desafios.</p>
+                        <a href="blog/ia-na-ciberseguranca.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/phishing_scam.jpg" alt="Phishing e Golpes Online: Como Identificar e Evitar as Armadilhas Mais Comuns" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Phishing e Golpes Online: Como Identificar e Evitar as Armadilhas Mais Comuns</h3>
+                        <p class="card-description">Aprenda a identificar e evitar os golpes de phishing e outras armadilhas online mais comuns. Proteja-se contra fraudes e roubo de dados.</p>
+                        <a href="blog/phishing-golpes-online.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/privacidade_online.jpg" alt="Privacidade Online: Dicas Essenciais para Proteger Sua Identidade Digital" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Privacidade Online: Dicas Essenciais para Proteger Sua Identidade Digital</h3>
+                        <p class="card-description">Aprenda dicas essenciais para proteger sua privacidade online e sua identidade digital. Mantenha suas informações seguras na internet.</p>
+                        <a href="blog/privacidade-online-dicas-essenciais.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/segurança.jpg" alt="Segurança Online para Crianças: Guia Essencial para Pais" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Segurança Online para Crianças: Guia Essencial para Pais</h3>
+                        <p class="card-description">Guia completo para pais e educadores sobre segurança online para crianças. Dicas práticas para proteger os pequenos na internet.</p>
+                        <a href="blog/seguranca-online-para-criancas.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/seguranca_dispositivos_moveis.jpg" alt="Segurança de Dispositivos Móveis: Proteja Seu Smartphone e Tablet Contra Ameaças Digitais" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Segurança de Dispositivos Móveis: Proteja Seu Smartphone e Tablet Contra Ameaças Digitais</h3>
+                        <p class="card-description">Proteja seu smartphone e tablet contra ameaças digitais. Aprenda dicas essenciais de segurança para dispositivos móveis e mantenha seus dados seguros.</p>
+                        <a href="blog/seguranca-dispositivos-moveis.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/seguranca_redes_sociais.png" alt="Segurança em Redes Sociais: Proteja Sua Privacidade e Evite Golpes" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Segurança em Redes Sociais: Proteja Sua Privacidade e Evite Golpes</h3>
+                        <p class="card-description">Aprenda a proteger sua privacidade e segurança nas redes sociais. Dicas essenciais para evitar golpes, vazamento de dados e manter suas contas seguras.</p>
+                        <a href="blog/seguranca-em-redes-sociais.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/seguranca_wifi_publico.jpg" alt="Segurança em Wi-Fi Público: Riscos e Como se Proteger" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Segurança em Wi-Fi Público: Riscos e Como se Proteger</h3>
+                        <p class="card-description">Aprenda os riscos de usar Wi-Fi público e como se proteger. Dicas essenciais para manter seus dados seguros em redes abertas.</p>
+                        <a href="blog/seguranca-em-wifi-publico.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/seguranca_nuvem.webp" alt="Segurança na Nuvem: Protegendo Seus Dados e Aplicações na Cloud" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Segurança na Nuvem: Protegendo Seus Dados e Aplicações na Cloud</h3>
+                        <p class="card-description">Entenda a importância da segurança na nuvem e as melhores práticas para proteger seus dados e aplicações em ambientes de cloud computing.</p>
+                        <a href="blog/seguranca-na-nuvem.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/senhas_seguras.webp" alt="Senhas Seguras e Autenticação de Dois Fatores: O Guia Essencial para Proteger Suas Contas Online" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Senhas Seguras e Autenticação de Dois Fatores: O Guia Essencial para Proteger Suas Contas Online</h3>
+                        <p class="card-description">Aprenda a criar senhas fortes e a importância da autenticação de dois fatores (2FA) para proteger suas contas online. Guia completo de segurança digital.</p>
+                        <a href="blog/senhas-seguras-autenticacao-dois-fatores.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/ferramentas_ia_1.jpg" alt="Sites que Pagam para Usar Inteligência Artificial" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Sites que Pagam para Usar Inteligência Artificial</h3>
+                        <p class="card-description">Lista completa de sites que pagam para usar inteligência artificial. Descubra plataformas que remuneram usuários por tarefas com IA, valores e como começar.</p>
+                        <a href="blog/sites-que-pagam-usar-inteligencia-artificial.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card fade-in">
+                    <img src="img/canva_icon.png" alt="Tutoriais Passo a Passo: Monetizando com IA" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Tutoriais Passo a Passo: Monetizando com IA</h3>
+                        <p class="card-description">Guias práticos e detalhados para implementar estratégias de monetização com IA, do básico ao avançado.</p>
+                        <a href="blog/tutoriais-passo-passo-monetizando-ia.html" class="card-link">Ler Artigo <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -279,6 +555,7 @@
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
+    <script src="js/articles.js"></script>
     
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
