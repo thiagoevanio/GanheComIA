@@ -1,19 +1,6 @@
 User-agent: *
+Disallow: /admin/
+Disallow: /privado/
 Allow: /
 
-# Sitemap
 Sitemap: https://ganhecomia.com.br/sitemap.xml
-
-# Disallow admin areas (if any)
-Disallow: /admin/
-Disallow: /private/
-
-# Allow important pages
-Allow: /blog/
-Allow: /ferramentas.html
-Allow: /cursos-ebooks.html
-Allow: /ebook-gratuito.html
-
-# Crawl delay (optional)
-Crawl-delay: 1
-
